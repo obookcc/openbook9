@@ -1,3 +1,0 @@
-openbook-code
-=============
-hello world
