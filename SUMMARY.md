@@ -16,4 +16,7 @@
    * [从计算机俱乐部到终生幼儿园--第一期](scratch/scratch_first.md)
    * [《Ardublock玩转机器人》—点亮LED（上)](ardublock/ardublockled.md)
    * [《Ardublock玩转机器人》—点亮LED（下）](ardublockled/README.md)
+* [开源制造](openmaker/README.md)
+   * [MUSE,3D扫描制作的3D胸衣](openmaker/muse.md)
+   * [3D打印模型火箭建造工具箱](openmaker/3dprint_rocket.md)
 
