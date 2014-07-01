@@ -8,4 +8,12 @@
    * [疯教授漫谈物理计算--看懂电路原理图](column/read_circuit_schematics.md)
 * [开源硬件](oshd/README.md)
    * [铁甲钢拳3](oshd/real_steel.md)
+   * [用ardunio 制作无刷万向节 ](oshd/brushless-gimbal-with-arduino.md)
+   * [基于Arduino与LabVIEW的直流电机转速控制系统](oshd/arduino-labview.md)
+   * [DFRocket--手把手教你用Solidworks建模型](oshd/dfrocket--solidworks.md)
+   * [创客工具类安卓软件推荐](oshd/maker-android.md)
+* [STEAM教育](ardublock/README.md)
+   * [从计算机俱乐部到终生幼儿园--第一期](scratch/scratch_first.md)
+   * [《Ardublock玩转机器人》—点亮LED（上)](ardublock/ardublockled.md)
+   * [《Ardublock玩转机器人》—点亮LED（下）](ardublockled/README.md)
 
