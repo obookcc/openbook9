@@ -1,0 +1,564 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>疯教授漫谈物理计算--看懂电路原理图 | 开源杂志</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="obookcc">
+    
+    
+    <link rel="next" href="../oshd/README.html" />
+    
+    
+    <link rel="prev" href="../column/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="obookcc/openbook9" data-level="5.1" data-basepath=".." data-revision="1404238104718">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/obookcc/openbook9" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/obookcc/openbook9/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/obookcc/openbook9/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >开源杂志</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/obookcc" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/edit/master/column/read_circuit_schematics.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="get_in_touch_with_us/README.html">
+            
+            <a href="../get_in_touch_with_us/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> 联系我们
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="donate/README.html">
+            
+            <a href="../donate/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> 捐助
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="cooperation/README.html">
+            
+            <a href="../cooperation/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> 合作网站
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="advertising/README.html">
+            
+            <a href="../advertising/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> 广告
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="column/README.html">
+            
+            <a href="../column/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> 特邀专栏
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="column/read_circuit_schematics.html">
+            
+            <a href="../column/read_circuit_schematics.html">
+                <i class="fa fa-check"></i> <b>5.1.</b> 疯教授漫谈物理计算--看懂电路原理图
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="oshd/README.html">
+            
+            <a href="../oshd/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> 开源硬件
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="oshd/real_steel.html">
+            
+            <a href="../oshd/real_steel.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> 铁甲钢拳3
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="oshd/brushless-gimbal-with-arduino.html">
+            
+            <a href="../oshd/brushless-gimbal-with-arduino.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> 用ardunio 制作无刷万向节 
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="oshd/arduino-labview.html">
+            
+            <a href="../oshd/arduino-labview.html">
+                <i class="fa fa-check"></i> <b>6.3.</b> 基于Arduino与LabVIEW的直流电机转速控制系统
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="oshd/dfrocket--solidworks.html">
+            
+            <a href="../oshd/dfrocket--solidworks.html">
+                <i class="fa fa-check"></i> <b>6.4.</b> DFRocket--手把手教你用Solidworks建模型
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="oshd/maker-android.html">
+            
+            <a href="../oshd/maker-android.html">
+                <i class="fa fa-check"></i> <b>6.5.</b> 创客工具类安卓软件推荐
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ardublock/README.html">
+            
+            <a href="../ardublock/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> STEAM教育
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="scratch/scratch_first.html">
+            
+            <a href="../scratch/scratch_first.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> 从计算机俱乐部到终生幼儿园--第一期
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ardublock/ardublockled.html">
+            
+            <a href="../ardublock/ardublockled.html">
+                <i class="fa fa-check"></i> <b>7.2.</b> 《Ardublock玩转机器人》—点亮LED（上)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="ardublockled/README.html">
+            
+            <a href="../ardublockled/README.html">
+                <i class="fa fa-check"></i> <b>7.3.</b> 《Ardublock玩转机器人》—点亮LED（下）
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="openmaker/README.html">
+            
+            <a href="../openmaker/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> 开源制造
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="openmaker/muse.html">
+            
+            <a href="../openmaker/muse.html">
+                <i class="fa fa-check"></i> <b>8.1.</b> MUSE,3D扫描制作的3D胸衣
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="openmaker/3dprint_rocket.html">
+            
+            <a href="../openmaker/3dprint_rocket.html">
+                <i class="fa fa-check"></i> <b>8.2.</b> 3D打印模型火箭建造工具箱
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 31.57894736842105%;min-width: 26.31578947368421%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../get_in_touch_with_us/README.html" title="联系我们" class="chapter done new-chapter" data-progress="1" style="left: 5.2631578947368425%;"></a>
+    
+        <a href="../donate/README.html" title="捐助" class="chapter done new-chapter" data-progress="2" style="left: 10.526315789473685%;"></a>
+    
+        <a href="../cooperation/README.html" title="合作网站" class="chapter done new-chapter" data-progress="3" style="left: 15.789473684210526%;"></a>
+    
+        <a href="../advertising/README.html" title="广告" class="chapter done new-chapter" data-progress="4" style="left: 21.05263157894737%;"></a>
+    
+        <a href="../column/README.html" title="特邀专栏" class="chapter done new-chapter" data-progress="5" style="left: 26.31578947368421%;"></a>
+    
+        <a href="../column/read_circuit_schematics.html" title="疯教授漫谈物理计算--看懂电路原理图" class="chapter done " data-progress="5.1" style="left: 31.57894736842105%;"></a>
+    
+        <a href="../oshd/README.html" title="开源硬件" class="chapter  new-chapter" data-progress="6" style="left: 36.8421052631579%;"></a>
+    
+        <a href="../oshd/real_steel.html" title="铁甲钢拳3" class="chapter  " data-progress="6.1" style="left: 42.10526315789474%;"></a>
+    
+        <a href="../oshd/brushless-gimbal-with-arduino.html" title="用ardunio 制作无刷万向节 " class="chapter  " data-progress="6.2" style="left: 47.36842105263158%;"></a>
+    
+        <a href="../oshd/arduino-labview.html" title="基于Arduino与LabVIEW的直流电机转速控制系统" class="chapter  " data-progress="6.3" style="left: 52.63157894736842%;"></a>
+    
+        <a href="../oshd/dfrocket--solidworks.html" title="DFRocket--手把手教你用Solidworks建模型" class="chapter  " data-progress="6.4" style="left: 57.89473684210526%;"></a>
+    
+        <a href="../oshd/maker-android.html" title="创客工具类安卓软件推荐" class="chapter  " data-progress="6.5" style="left: 63.1578947368421%;"></a>
+    
+        <a href="../ardublock/README.html" title="STEAM教育" class="chapter  new-chapter" data-progress="7" style="left: 68.42105263157895%;"></a>
+    
+        <a href="../scratch/scratch_first.html" title="从计算机俱乐部到终生幼儿园--第一期" class="chapter  " data-progress="7.1" style="left: 73.6842105263158%;"></a>
+    
+        <a href="../ardublock/ardublockled.html" title="《Ardublock玩转机器人》—点亮LED（上)" class="chapter  " data-progress="7.2" style="left: 78.94736842105263%;"></a>
+    
+        <a href="../ardublockled/README.html" title="《Ardublock玩转机器人》—点亮LED（下）" class="chapter  " data-progress="7.3" style="left: 84.21052631578948%;"></a>
+    
+        <a href="../openmaker/README.html" title="开源制造" class="chapter  new-chapter" data-progress="8" style="left: 89.47368421052632%;"></a>
+    
+        <a href="../openmaker/muse.html" title="MUSE,3D扫描制作的3D胸衣" class="chapter  " data-progress="8.1" style="left: 94.73684210526316%;"></a>
+    
+        <a href="../openmaker/3dprint_rocket.html" title="3D打印模型火箭建造工具箱" class="chapter  " data-progress="8.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_791">
+                    
+                        <h1 id="-">疯教授漫谈物理计算--看懂电路原理图</h1>
+<blockquote>
+<p>网名:风的孩子,湖南人,由于他喜欢忽悠新人,常常摆出诲人不 倦的嘴脸,拉人下水(让大伙和他一样乐于玩 Arduino),所以 Arduino 爱好 者圈子里面赠送了一个匪号:“疯叫兽”。</p>
+<p>叫兽出生在 70 年代末期,在 Arduino 圈子里面也算是一个大叔级别的人物, 由于毕业于和 Arduino 毫不相干的经济学专业,在跌跌撞撞地成神之路中,犯 过了所有菜鸟所能犯的一切错误。所以,他的特长在于引导新人入门,能够将貌 似无比晦涩的概念用无比实在的大白话阐述出来。</p>
+<p>闲时翻译过若干本书,也做过若干轮讲座,目前是科学出版社特邀出版评审 专家,也是国内最大 Arduino 爱好者 QQ 群的管理员之一。</p>
+</blockquote>
+<p>如果我给出下面的电路原理图给大家，大家会不会看了之后一头雾水？感觉如老虎吃乌龟，不知道怎么下嘴？<img src="http://doask.qiniudn.com/openbook9-fengda1.png" alt="1"></p>
+<p>实际上，这张图就是Arduino Uno R3的电路原理图，我第一次看这种电路图也是一头雾水。
+不过，别担心，我们一步一来，完全看懂它并不需要多久的时间。
+首先，我们弄懂电路原理图的概念：用直角拐弯线条将各种电子元器件图标的引脚连接起来组成电路，完成某种特定功能的示意图就叫电路原理图。</p>
+<h2 id="1-1-">1.1 电路原理图中让初学者挠头的规则：</h2>
+<p>A、除IC和连接器（接插件）所有的电子元器件都有其固定的图标。
+如上一章电阻的图标，电容的图标等，它们都有其标准的图标，一个图标就代表一种电子元器件（电子元器件的图标会做上标和下标，我们也能够从它上标的头字母来了解这种零件的类型，从下标了解这个电子元器件的实际值，但是，我们无法判断其具体的封装及外形尺寸）。
+让读者挠头的是，电子元器件的图标很多，很繁杂，除非是专业人士，否则记忆起来让人挠头。</p>
+<p>如下例：<img src="http://doask.qiniudn.com/openbook9-fengda2.png" alt="2"></p>
+<p>对它的理解如下：</p>
+<blockquote>
+<p>这是一个无极性电容器，它在电路图中的编号为C14，容值为100nF</p>
+</blockquote>
+<p>又如下例：<img src="http://doask.qiniudn.com/openbook9-fengda3.png" alt="3"></p>
+<p>对它的理解如下：</p>
+<blockquote>
+<p>这是一个有极性的电容，在电路图中的编号为C20，容值为47uF</p>
+</blockquote>
+<p>还如：<img src="http://doask.qiniudn.com/openbook9-fengda4.png" alt="04"></p>
+<blockquote>
+<p>这是一颗保险丝，在电路图中的编号为F2，限流值为500mA</p>
+</blockquote>
+<p>B、我们不仅要熟悉电子元器件的图标，知道它的功能，知道它的商业化封装的可选尺寸，知道它的值范围，知道它的关联数据。
+实际上，几乎所有的电子元器件都有一本或厚或薄的书来介绍它，这种书的名字叫：数据手册（Datasheet）。
+会不会看数据手册，看不看得懂数据手册，其实很考校一个人的电子学基本功。不过，在此陈恳地建议诸位读者，如果你的英文基础不算太烂，当你进行基于Arduino的项目创作的时候，请有事没事翻一下所用电子元器件的数据手册，你会受益良多的。
+我们在看电路原理图的时候，实际上就是在从电源的负极和正极出发，然后看导线通过了什么电子元器件，各种电子元器件对电压或者电流又分别产生了什么影响，有什么效果输出来，直到最后导线回到电源的负极或者正极。</p>
+<p>  C、连接电子元器件之间的连线是直线，在电学计算的时候被考虑为理想导线（无电阻）。并且，导线相交并不表示两条导线在电路上连接在一起。仅在交叉点被打上一个圆点才算连接。所以，在碰到交叉的情况的时候，需要小心点，务必看清楚是否有圆点，否则就很容易出现误读，从而导致错误，让人挠头。</p>
+<table>
+<thead>
+<tr>
+<th>这种情况下导线不连接</th>
+<th>这种情况下，导线其实是连接在一起</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://doask.qiniudn.com/openbook9-fengda5.1.png" alt="5.1"></td>
+<td><img src="http://doask.qiniudn.com/openbook9-fengda5.2.png" alt="5.2"></td>
+</tr>
+</tbody>
+</table>
+<p> D、为使得复杂电路图能够有效地根据功能分区，特别定义，两段导线如果在各自导线末端上进行了一致性的文字，则表示两段线在实际上是连接在一起的。如下图：</p>
+<table>
+<thead>
+<tr>
+<th>它们实际上是连接在一起的（USBVCC）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://doask.qiniudn.com/openbook9-fengda6.1.png" alt="6.1"> <img src="http://doask.qiniudn.com/openbook9-fengda6.2.png" alt="6.2"></td>
+</tr>
+</tbody>
+</table>
+<p>如果电路图非常大，那么你就需要在众多的连线中找到两根等价的线，这让人挠头，但是，如果不找到，你就看不懂全图。
+不过，有些电路原理图的分块是毫无道理可言的，仅仅是设计者的个人喜好。因此，你将不得不重新在脑海里面将这些分开的电路原理图凑成一张整图，这很烦人。</p>
+<p> E、特别规定VCC，GND两种特殊符号，表示电源的正极（VCC）和负极（GND）连接入电路。</p>
+<p>对于VCC图标而言，所有上标一致的电源是来自于同一个电源。</p>
+<p>如Arduino Uno R3的电路图中，所有的如下图圆圈中的VCC图标，其实都是连接在一起的，都连接到了+5V电源上：<img src="http://doask.qiniudn.com/openbook9-fengda7.png" alt="7"></p>
+<p>所有下标为GND的其实都是连接在一起的：<img src="http://doask.qiniudn.com/openbook9-fengda8.png" alt="8"></p>
+<p>这个规则也让初次接触电路原理图的人非常不习惯，以至于看起来挠头。（因为初学者习惯于用电池来表示电源）。
+有时候我们还会看到同样的图标上面会标示不同的数字，尤其是VCC，有时候会标注不同的电压，这个时候，请不要将它们等价成一体，而是标注不同的文字的才能够被归类成一样。
+当然，一般而言，一张电路原理图中，所有的GND倒是毫无疑义地是等价的。</p>
+<p>F 等价原则，或者说理想导线原则
+   如果电子元器件的两个引脚被直接连接在一起，那么，无论二者之间的连接线有多长，我们都可以将两个引脚看成是等价一致的。例如，我们假设A零件的a1引脚和B零件的b1引脚是直接连接的，那么，a1引脚的电流电压值和b1引脚的电流电压值是完全一致的。
+ 之所以会如此，是因为我们假设电路原理中的连接线（导线）的电阻是零，因此，它能够承受无限高的电压，或者无限大的电流强度。
+这一点也让初学者挠头，因为这显然违背了初中物理告诉我们的知识：导线越长，电阻越大。
+但是，请注意，这是原理图，导线的电阻被忽略是一个约定俗成的规则。即便我们需要表现实际导线的电阻，那么我们也必须在电路中加入一个固定电阻的图标来表示。</p>
+<p>如果了解了上面的规则，我相信，即便看不懂整个Arduino R3的电路图。可是，每个电子元件的连接情况，相信大家都会明了吧？</p>
+<p>总而言之，电路原理图其实一种抽象化的连接逻辑，我们可以根据原理图了解各个零件的连接方法，了解各种零件在电路计算中所需的参数，推测各种电路回路所实现的功能。
+但是，由于电路图是一种抽象化的电子元器件连接，所以在这里再次强调：我们不能根据其在原理图上所占空间的大小来确定其物理尺寸的大小，即所谓的封装方式。
+比如说，在Arduino主板上，ATMEGA328P和ATMEGA16U2，前者明显比后者个头大，但是在原理图上面，明显后者比前者的个头大很多。
+而之所以前者在电路原理图上很大，只是因为后者的引脚很多，如果不把表示芯片的方框画很大，那么引脚就不好进行标记和分类。
+又如，有些大功率器件的电路原理图，它的电路结构非常简单，但是其代表的电路板成品的物理尺寸却非常巨大（因为要加强散热）。</p>
+<h2 id="12-2-">12.2电路图的识别实战-从最简单的电路图开始</h2>
+<p>下面，我们来开始电路图的识别实战，尝试看懂Arduino Uno R3版本的LED的电路图。
+  首先，我们需要先回忆下初中的物理知识。
+一个完整的可控电路原型是什么样子的？
+可控电路，顾名思义，就是电路的运行是可控的。如何可控？其实，说白了，就是有一个开关，能够控制电路的通断。</p>
+<p>如下图所示：<img src="http://doask.qiniudn.com/openbook9-fengda9.png" alt="9"></p>
+<p>一个完整的可控电路原型的电路图里面包含了三个设备：</p>
+<blockquote>
+<p>电池：为电路提供电源
+开关：使得电路可控
+用电器：使得电路完成某种功能</p>
+</blockquote>
+<p>如果这个开关是人来控制，那么这个电路就是所谓的人工控制电路
+如果这个开关是由Arduino之类的计算机来控制，那么这个电路就是所谓的人工智能控制电路。</p>
+<p>从宽泛地意义而言，我们任何完整的Arduino应用电路其实最终都能够被归化成这个可控电路原型。</p>
+<p>Arduino L灯的电路原型及归化到可控电路原型的方法
+还记得在第二卷里被我们反复折腾的L灯么？其实它的电路图就可以被归化到可控电路原型中。
+下面，我们就将Arduino 相关于L灯的电路原理图从整个电路中抠出来，然后尝试将其归化到可控电路原型的框架内去：<img src="http://doask.qiniudn.com/openbook9-fengda10.png" alt="10"></p>
+<p>抠出来的部分如果加以整理，实际上，我们得到的是如下的观察结果：
+从芯片的PB5引脚连接出来，然后同时连接到排母IOH上的13号引脚上以及一个并联电阻上，根据等价原则，PB5引脚其实就是Arduino主板的13号引脚。
+并联电阻编号为RN2A和RN2B，每个为1KΩ（1000Ω），套用并联电阻计算公式，它们两个等效于一个电阻等于500Ω（欧姆）的单电阻。
+在通过并联电阻之后，电路连接到LED，再通过LED连接到了GND。
+如果只讲到这里，相信大家会发飙：
+这如何被归化到完整的基本可控电路中去？开关呢？电源的正极呢？
+好吧。实话实话，我们其实只抠完了一半。
+还有一半没有抠完，我们继续抠另外一半，它的截取部分如下：<img src="http://doask.qiniudn.com/openbook9-fengda11.png" alt="11"></p>
+<p>如果精简掉和我们研究内容无关的连线并加以整理。那么，我们实际上可以得到如下的电路图：<img src="http://doask.qiniudn.com/openbook9-fengda12.png" alt="12"></p>
+<p>即，对照标可控电路原型，Arduino Uno R3 的L灯的电路原理图可以作如下归化：
+电源：+5V和GND实际上构成了电源的正负两极。电源在原图中被抽象成了正负两个图标。
+用电器：实际上，是两个电阻的并联和LED灯共同作为用电器而存在。
+开关：开关哪里去了？实际上，我们可以将ATMEGA芯片看做是一个开关，或者说，在VCC引脚和PB5（也就是Arduino的13号引脚）引脚之间的芯片内部，有一个能够被ATMEGA328P芯片控制的开关。</p>
+<p><strong>至此，整个归化过程完结。
+完成这个归化过程对我们来说有什么意义呢？</strong></p>
+<p>A、我们在构思可控电路的时候就会有一个思维的起始点：即，我们无论怎么画图，最开始都是按照可控电路原型来展开思维的。只是因为实现的效果或者功能不同，电路可行的电流或者电压不同，电路处于的环境不同等因素，我们会将用电器的部分设计得五花八门，但是，究其根本还是脱离不了这个范畴。
+这类似于孙悟空的72变和其本尊之间的联系和区别。</p>
+<p>B、我们未来肯定需要通过看别人的电路图来提高自己，那么如何看?很简单，我们逮住VCC开始看，看它通过什么元件，最终我们需要找到通往GND的路。
+而由多段连接线，完成从VCC到GND之间的连接，这实际上就是一个完整的回路。不管电路多么复杂，你都可以进行这样的梳理。而梳理的目标就是：看看到底有多少条可能性的连通实现了从VCC到GND。</p>
+<p>C、在我们懂得这个过程之后，我们也可以来分析自己画的电路。如果实现了从VCC-GND的连续连接，那么至少你的电路可以导通，而不是毫无根据的臆想。</p>
+<p>D、在画完电路原理图之后，我们在进行零件选型匹配的时候需要做数学计算，那么电压或者电流的信息从哪里取得？如何计算一个确定的电子元器件（如电阻）究竟需要多大的值才是合适的？那我们在进行电子元器件的选用参数计算的时候，我们同样需要将电路归化成可控电路原型来展开计算，否则，眉毛胡子一把抓，你哪里来的头绪？
+不过，在实践中，由于我们已经熟悉了Arduino的电路原理图，所以如果不是特别必要，那么我们就会进行省略，即，我们直接从Arduino的引脚开始，然后画出用电器，再连接到GND或者VCC去。
+ 如，关于L灯的电路，我们最终可以画成如下的电路原理图：<img src="http://doask.qiniudn.com/openbook9-fengda13.png" alt="13"></p>
+<p>因为，实际上，DGITAL_#13连接线就是连接到了Arduino主板的13号引脚，而如果对照可控电路的原型来说，它已经连接到开关右边的那个引脚。
+从开关右边的引脚开始回溯,一直到电源的正极，对于Arduino主板来说，这些电路都是不可改变并为大家所熟知的（除非你把Arduino主板给拆了，然后动用烙铁连接别的线路）。
+既然这个部分大家都知道，那么省略了，也就没有什么大不了的，反正不会影响电路的分析和最后实际的连接工作。</p>
+<p><strong>小结：</strong></p>
+<p>看懂电路图对我们来说非常重要，一方面，我们需要看懂别人的电路图，从而为自己的创作提供灵感和素材，另一方面，我们必须在开始电路搭建之前先行看懂或者设计出电路原理图来，否则，我们的电路搭建就会变成一场几乎必败的赌博。
+当然，这篇文章也不是认识电路图的大百科全书及终极必杀技。实际上，我这里并未将所有的电子元器件的原理图图标开列出来，这需要读者自己去翻找。
+并且，我也没有提及关于根据电路原理图来进行电路计算的知识。
+电路原理图的信息包含的内容非常丰富，但也不是全部。不过，总得来说，我这篇介绍知识为了让读者们能够入门，可以在一个扎实的基础上就未来的有关学习做出扩展。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../column/README.html" class="navigation navigation-prev " aria-label="Previous page: 特邀专栏"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../oshd/README.html" class="navigation navigation-next " aria-label="Next page: 开源硬件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

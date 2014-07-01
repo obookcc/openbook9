@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>用ardunio 制作无刷万向节  | 开源杂志</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="obookcc">
+    
+    
+    <link rel="next" href="../oshd/arduino-labview.html" />
+    
+    
+    <link rel="prev" href="../oshd/real_steel.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="obookcc/openbook9" data-level="6.2" data-basepath=".." data-revision="1404238104718">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/obookcc/openbook9" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/obookcc/openbook9/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/obookcc/openbook9/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >开源杂志</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/obookcc" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/edit/master/oshd/brushless-gimbal-with-arduino.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="get_in_touch_with_us/README.html">
+            
+            <a href="../get_in_touch_with_us/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> 联系我们
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="donate/README.html">
+            
+            <a href="../donate/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> 捐助
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="cooperation/README.html">
+            
+            <a href="../cooperation/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> 合作网站
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="advertising/README.html">
+            
+            <a href="../advertising/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> 广告
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="column/README.html">
+            
+            <a href="../column/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> 特邀专栏
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="column/read_circuit_schematics.html">
+            
+            <a href="../column/read_circuit_schematics.html">
+                <i class="fa fa-check"></i> <b>5.1.</b> 疯教授漫谈物理计算--看懂电路原理图
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="oshd/README.html">
+            
+            <a href="../oshd/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> 开源硬件
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="oshd/real_steel.html">
+            
+            <a href="../oshd/real_steel.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> 铁甲钢拳3
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="oshd/brushless-gimbal-with-arduino.html">
+            
+            <a href="../oshd/brushless-gimbal-with-arduino.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> 用ardunio 制作无刷万向节 
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="oshd/arduino-labview.html">
+            
+            <a href="../oshd/arduino-labview.html">
+                <i class="fa fa-check"></i> <b>6.3.</b> 基于Arduino与LabVIEW的直流电机转速控制系统
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="oshd/dfrocket--solidworks.html">
+            
+            <a href="../oshd/dfrocket--solidworks.html">
+                <i class="fa fa-check"></i> <b>6.4.</b> DFRocket--手把手教你用Solidworks建模型
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="oshd/maker-android.html">
+            
+            <a href="../oshd/maker-android.html">
+                <i class="fa fa-check"></i> <b>6.5.</b> 创客工具类安卓软件推荐
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ardublock/README.html">
+            
+            <a href="../ardublock/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> STEAM教育
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="scratch/scratch_first.html">
+            
+            <a href="../scratch/scratch_first.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> 从计算机俱乐部到终生幼儿园--第一期
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ardublock/ardublockled.html">
+            
+            <a href="../ardublock/ardublockled.html">
+                <i class="fa fa-check"></i> <b>7.2.</b> 《Ardublock玩转机器人》—点亮LED（上)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="ardublockled/README.html">
+            
+            <a href="../ardublockled/README.html">
+                <i class="fa fa-check"></i> <b>7.3.</b> 《Ardublock玩转机器人》—点亮LED（下）
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="openmaker/README.html">
+            
+            <a href="../openmaker/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> 开源制造
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="openmaker/muse.html">
+            
+            <a href="../openmaker/muse.html">
+                <i class="fa fa-check"></i> <b>8.1.</b> MUSE,3D扫描制作的3D胸衣
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="openmaker/3dprint_rocket.html">
+            
+            <a href="../openmaker/3dprint_rocket.html">
+                <i class="fa fa-check"></i> <b>8.2.</b> 3D打印模型火箭建造工具箱
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 47.36842105263158%;min-width: 42.10526315789474%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../get_in_touch_with_us/README.html" title="联系我们" class="chapter done new-chapter" data-progress="1" style="left: 5.2631578947368425%;"></a>
+    
+        <a href="../donate/README.html" title="捐助" class="chapter done new-chapter" data-progress="2" style="left: 10.526315789473685%;"></a>
+    
+        <a href="../cooperation/README.html" title="合作网站" class="chapter done new-chapter" data-progress="3" style="left: 15.789473684210526%;"></a>
+    
+        <a href="../advertising/README.html" title="广告" class="chapter done new-chapter" data-progress="4" style="left: 21.05263157894737%;"></a>
+    
+        <a href="../column/README.html" title="特邀专栏" class="chapter done new-chapter" data-progress="5" style="left: 26.31578947368421%;"></a>
+    
+        <a href="../column/read_circuit_schematics.html" title="疯教授漫谈物理计算--看懂电路原理图" class="chapter done " data-progress="5.1" style="left: 31.57894736842105%;"></a>
+    
+        <a href="../oshd/README.html" title="开源硬件" class="chapter done new-chapter" data-progress="6" style="left: 36.8421052631579%;"></a>
+    
+        <a href="../oshd/real_steel.html" title="铁甲钢拳3" class="chapter done " data-progress="6.1" style="left: 42.10526315789474%;"></a>
+    
+        <a href="../oshd/brushless-gimbal-with-arduino.html" title="用ardunio 制作无刷万向节 " class="chapter done " data-progress="6.2" style="left: 47.36842105263158%;"></a>
+    
+        <a href="../oshd/arduino-labview.html" title="基于Arduino与LabVIEW的直流电机转速控制系统" class="chapter  " data-progress="6.3" style="left: 52.63157894736842%;"></a>
+    
+        <a href="../oshd/dfrocket--solidworks.html" title="DFRocket--手把手教你用Solidworks建模型" class="chapter  " data-progress="6.4" style="left: 57.89473684210526%;"></a>
+    
+        <a href="../oshd/maker-android.html" title="创客工具类安卓软件推荐" class="chapter  " data-progress="6.5" style="left: 63.1578947368421%;"></a>
+    
+        <a href="../ardublock/README.html" title="STEAM教育" class="chapter  new-chapter" data-progress="7" style="left: 68.42105263157895%;"></a>
+    
+        <a href="../scratch/scratch_first.html" title="从计算机俱乐部到终生幼儿园--第一期" class="chapter  " data-progress="7.1" style="left: 73.6842105263158%;"></a>
+    
+        <a href="../ardublock/ardublockled.html" title="《Ardublock玩转机器人》—点亮LED（上)" class="chapter  " data-progress="7.2" style="left: 78.94736842105263%;"></a>
+    
+        <a href="../ardublockled/README.html" title="《Ardublock玩转机器人》—点亮LED（下）" class="chapter  " data-progress="7.3" style="left: 84.21052631578948%;"></a>
+    
+        <a href="../openmaker/README.html" title="开源制造" class="chapter  new-chapter" data-progress="8" style="left: 89.47368421052632%;"></a>
+    
+        <a href="../openmaker/muse.html" title="MUSE,3D扫描制作的3D胸衣" class="chapter  " data-progress="8.1" style="left: 94.73684210526316%;"></a>
+    
+        <a href="../openmaker/3dprint_rocket.html" title="3D打印模型火箭建造工具箱" class="chapter  " data-progress="8.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_800">
+                    
+                        <h1 id="-ardunio-">用ardunio 制作无刷万向节</h1>
+<blockquote>
+<p>作者： <a href="http://www.instructables.com/member/Jonah+Grubb/" target="_blank">Jonah Grubb</a> 翻译：石头 校对：katrina tips
+  <a href="http://www.instructables.com/id/Brushless-Gimbal-with-Arduino/?ALLSTEPS" target="_blank">原文</a></p>
+</blockquote>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless1.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless2.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless3.jpg" alt=""></p>
+<p>这是个由andreas biekert 和 jonah grubb 于2014年春天在波莫纳学院做的电子项目.感谢Whitaker教授, Tony Grigsby 和波莫纳学院物理系我们的项目目标是制作用一个从加速度计/陀螺仪获得输入信号，并用arduino uno来控制的两轴无刷万向节. 稍微解释一下，万向节是一个通过电机来消除摄像头抖动的稳定系统 . 消除撞击是首先要解决的问题，而我们的最终目标是创建完全稳定的镜头。 “无刷”指的是无刷电机,这个我们稍后一点再作更详细的解释.我们能找到的其他所有万向节项目都是用万向节标配的驱动板来控制的,因此我们想通过更底层的方式来达成这个目标.我们期望制作一个不需要这些板子而是使用更具通用性的arduino uno 来控制的无刷万向节.</p>
+<p>不得不承认我们虽然没有搞到想找的万向节,但我们确实了解了设备的工作原理。所以我们把一些改进的方向和想法写了下来. 希望这至少是一个良好的开始。如果你有任何问题和改进建议，都可以联系我们。</p>
+<p>在学习如何控制无刷电机和与加速度计交互的过程中，我们翻阅了一些与项目相关的资料.在后面我们将参考一些用于在本项目中控制无刷电机的材料或照片.我们的代码主要是基于上述马达控制项目和带有控制MPU6050 芯片示例代码的I2C库. 非常感谢这两个项目给了我们努力的方向.</p>
+<p>这一类的项目很多实现的方法。而用Arduino Uno就是其中一种主流的方法。我们在亚马逊上买了一个框架和无刷电机组.当然你也可以直接3D打印一个更合适的框架 ,但我们对这个项目的电子部分更感兴趣,所以直接购买了一个成品,这样更加方便快捷.
+加速度计也是从亚马逊上购买的：加速度计/陀螺仪GY-521 电路板, 是我们找到的最便宜的MPU6050模块了.虽然便宜，但用在这个项目里已经可以满足需求了。坏了一块，所以不得不再去订一块新的。到现在我们还没有弄清楚是不是因为我们的过失而弄坏的。</p>
+<p>我们曾用了两个 Mauser 511-L298 h-bridges (带散热器)来控制电机—--后面还有更详细的介绍. 它们能够给电机提供更高的驱动电压和电流,这样电机就能够移动框架和摄像.</p>
+<p>其它的小组件还有 2个2.2k 的电阻 ,3个0.1μF的电容,还有一些配线：）.</p>
+<h2 id="-1-">步骤1:无刷电机控制( 第一部分-概念和原理)</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless4.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless5.jpg" alt=""></p>
+<p>无刷直流电机高效,精确,并且有足够的扭矩，因此使用在这个项目中是比较理想的;关键在于实际控制它们.  一般的做法是去买块可编程的电子调速器,这类板子可以带动风门输入并将将其转化成无刷电机转速. 但是那玩艺挺贵的,最便宜的也要20美刀,所以我们决定节省开支并搞清楚怎样可以不用那些板子去控制电机，不同于有刷直流电机简单的通过换向器改变在永磁场中线圈的电流方向来工作,无刷电机在定子和转子的线圈之间没有物理连接.最常见的无刷电机就是三相无刷电机.三相无刷电机有三组不同的线圈,一般用 A,B,C 表示.三组交叉线圈把永磁体包围起来.</p>
+<p>我们的电机有12个线圈或者说3个电磁体(4个线圈一个) 还有转子上的14 个永磁体
+我们的想法是 改变电磁体的极性,从而使永磁体跟着磁场变化转动. 最简单的形式是,我们有三个电磁体(A,B和C),转子只是一个简单的NS永磁体. 如果我们使得A 为 北极磁场 B 为南极磁场,C关闭.永磁体会尽量的与刚产生的磁场对齐.然后我们把电磁铁的极性旋转一个位置(A 关闭,B北极,C南极)永磁体会跟着转动.通过这种方式我们就可以靠一组整流相位来使转子转动,当然我们也能让转子反方向转动.看一下下这两段视频,里面有清晰明了的图解.</p>
+<p> 视频一</p>
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNzM0MDk3NzAw" frameborder=0 allowfullscreen></iframe>
+
+<p> 视频二</p>
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNzM0MjYxNjM2" frameborder=0 allowfullscreen></iframe>
+
+<p>我们之前做了一些研究，发现如果输入 一组相位差120度的正弦波到电磁体的话，我们就能创建一个动态的磁场来驱动电机转动. 通过引入正弦信号来改变电磁体的磁性使电机的动作平滑 .</p>
+<p>这个网站很实用，它把刚才提到的理论都转换到了Arduino中。实现这种方式的窍门在于用arduino 来输入pwm 信号, 因为pwm 信号只有高(1)和低(0),所以我们还需要一块H Bridge， 这样我们才可以输出负极信号从而控制线圈的极性 .</p>
+<p>无刷电机最大的挑战就是，如果你要很好的控制这玩意,你必须知道转子相对于定子的位置.只有这样控制器才能准确知道开始或是跳到某个换向周期.我们希望加速度计能给我们这个反馈,做到这一点就算是一个阶段性的成功. 更复杂的办法包括使用用霍尔感应器监测转子位置,或是在线圈中使用”反电势”.</p>
+<h2 id="-2-">步骤2 : 实现无刷电机控制</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless6.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless7.jpg" alt=""></p>
+<p>引入 H-Bridge 来控制电机，来满足万向节的双向性要求,同时也使得电机的转动也很平滑.H-Bridge可以改变电磁铁中的电流方向，还可以产生高，中，低三档不同的电压。.就如在之前的引言中提到过的,我们使用的是15个引脚的 L298 h-bridges  如图所示我们把他们连接起来.</p>
+<p>下面是数据表</p>
+<ul>
+<li>引脚1：地线</li>
+<li>引脚2：电机引脚1</li>
+<li>引脚3：电机引脚2</li>
+<li>引脚4：外部电源电压（一个0.1μF电容接地）</li>
+<li>引脚5：Arduino的PWM数字输出（引脚3或9）</li>
+<li>引脚6：Arduino的+5 V（一个0.1μF电容接地）</li>
+<li>引脚7：Arduino的PWM数字输出（引脚5或10）</li>
+<li>引脚8：地线</li>
+<li>引脚9： Arduino的+5 V</li>
+<li>引脚10：Arduino的PWM数字输出（引脚6或11）</li>
+<li>引脚11： Arduino的+5 V</li>
+<li>引脚12：不连接</li>
+<li>引脚13：电机引脚3</li>
+<li>引脚14：不连接</li>
+<li>引脚15：地线</li>
+</ul>
+<p>‘我们的参考的代码给出了一个非常巧妙的结构来生成正弦信号.通过在正弦函数上等距抽样的 48个点，用0-255（8比特）的数字信号来表示每一点的电压  ,然后输出到A B C 三个电磁体,三组输出之间 刚好相差16个值的间隔 .也就是相位差刚好120度.
+只是简单的有序的循环输出这个数列中的所有状态值，就能产生正弦波。
+结果arduino 控制输出的信号,让电机运转的很平滑,当然你怎么搞也突破不了电机本身的物理速度限制.</p>
+<p>我们使用了跟参考代码里一样的PWM 正弦数组,我们的数字算法允许我们用给定的步长来推算出正弦信号中相应点的电压值 ,于是我们把采样点由48个提升到96个，这样我们能更精准地控制电机. 我们的电机并不需要整圈的旋转,只需要根据底座的位置调整相应的相机位置就可以了,根据实验表明每次最小0.2度的调整才能满足我们的要求。</p>
+<p>应当注意到，我们控制无刷电机的方法基本上只能算是个权益之计.在任意时刻,我们需要让一个电磁体保持高电流,一个低电流,另外一个高阻态.所谓高阻态是一种非高又非低的状态,我们的这个例子中”高阻态” 指的是让电流流向地，但是这样电机会发出很多热量，所以我们一个很明确做需要做出改进的地方就是防止电机在长期（大约1~2分钟）工作的状态下过热实现上还有一个难点，就是框架和摄像头的重量超出电机的实际扭矩，可能导致电机过转或者滞转,这种情况下我们的程序无法意识到电机和信号已经不同步了,只能等到电磁体的磁场恰好又到一个契合的位置,从而恢复电机正常运转.</p>
+<h2 id="-3-">步骤3:使用加速度计和陀螺仪</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless8.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-brushless9.jpg" alt=""></p>
+<p>加速度计使arduino 时刻获得相机相对地心引力的位置，同时也能获得轴的加速度信息．　陀螺仪能测量角度的变化．通过这些数据我们可以搞出一个保持万向节在特定位置的伺服系统（我们用一组信号来实现反馈回路控制）．</p>
+<p>我们使用了GY 521板子上的 MPU 6060 6-DOF(Degree of Freedom)加速度计和陀螺仪</p>
+<p>我们把加速度计和arduino 连接起来，　如上图所示．
+很不幸这块电路板没有data sheet .这是我们在亚马逊上找到的注释:</p>
+<pre><code>VCC： A rduino+3.3 V（0.1μF电容接地）
+GND：接地
+SCL： Arduino　uno  A5（接2.2k上拉电阻到Arduino +5V）
+SDA：Arduino uno A4（接2.2k上拉电阻到Arduino +5V　）
+XDA：无连接
+XCL：无连接
+ADO:接地
+INT： Arduino 数字引脚2
+</code></pre><p>我们也找到一些anduino 的代码，从中能够得到一些粗略的信息．但是这些东西很杂乱也不是特别有用．MPU 6050 有一个内置的数字动作处理器(dmp), 只是没有提供操作指南。</p>
+<p>麻省理工的一些天才逆向了这个芯片，找到了使用这个芯片并从中获取有用数据的方法．(非常感谢 Jeff Rowberg!)　用了他的代码之后我们可以获得几种不同格式的数据，这些数据包括欧拉角，复数，或是旋转矩阵(YPR)</p>
+<p>其中YPR数据跟控制相机刚好相关，所以我们决定用它来控制我们的相机。我们有一个俯仰电机（想象一下抬头,低头）还有一个 反转电机 （想象一下一个转弯时的飞机 ）。</p>
+<p>一旦获得了这种格式的数据，编码实际上是相当容易的 ，我们写了一个基本的伺服器代码使得电机能够靠输入相应方向的正弦信号转到设定的任意角度。这两个轴向的电机可以很好的配合工作 ，因此我们可以独立控制他们，并且没有任何相互干扰 。 以上就是本项目核心概念的简单表述 。</p>
+<p>YPR 数据有点折腾的地方就是它只给 -90 到90 度的角度数据 ，当在水平位置时候伺服就偶尔会罢工 。理论上对万向节应用来说不是个问题(当然我们认为认为这是个值得改进的地方)。</p>
+<h2 id="-4-">步骤4 ：组装</h2>
+<p>在我们的成品里，我们只是把电机控制两个简单概念以及加速度计读数整合在一起做成了伺服系统。你可以从这里查看结果数据 。</p>
+<p>当然，解决方案并不是那么简单 在组装阶段我们克服了很多困难，还有很多是我们无法解决的 。 最初我们只是安装的了两根轴中的一根轴，并且痛苦了很长一段时间才最终把电机和加度计协调起来，
+相比之下让两个电机独立工作就变得没那么麻烦。我们发现一件奇怪的事，就是在Arduino  I2C引脚A4/A5 和 +5v 之间的2.2k 的上拉电阻，如果这里阻值超过 3.3k 的话电机就无法通电（译者注：那是因为片内分压过低导控制信号由1变为0） 。上拉电阻往往接到模拟端口这样可以稳定信号，同时可以防止Arduino 不工作 ，它们更像预防措施，而非强制的必须，因此理论上所有的阻值都应该可以(合理范围内)。</p>
+<p>我们的结论是:这上拉电阻肯定是为了修正什么，虽然我们无法确定它到底要修正什么。</p>
+<p>不知道什么原因我们增加外部电源电压，且在一个轴上超过7-8V（虽然我们最终解决了1轴的问题），连接两个轴总是 3v 到 4 v (0.3安培看起来是是极限了 )通过H-bridges 。这样加速度计的数据看起来是一堆乱码。Arduino 最终崩溃了，所以电机也无法工作了。</p>
+<p>通过示波器我们发现了一些状况。基本上我们把外接电源接入电路时，电流大约是0.8安培,所有地方都出现了大量干扰噪声。接地 的电压大约在 -2 到+3V 之间！！！</p>
+<p>明显是这原因导致了加速度计没办法工作。这也应该就是所有问题的根源，如果我们解决了这个问题，应该这玩意应该就可以工作了 。</p>
+<p>在使用无刷电机的时候，你实际上搞出了一个通过线圈的变化磁场。根据法拉第定律线圈种会有一个反电势。我们猜测是这个反电势导致了之前提到的那些噪声。</p>
+<p>第二个可能就是我们根本没有搭建好。我们在H-Brige 和 一个加速计之间用了太长的导线。长导线和高电压非常容易影响电磁体从而把噪声引入电路 。</p>
+<p>最终我们貌似通过了2.2k 的上拉电阻解决了其中一个轴的问题。我有了一个跑的很好的俯仰伺服并且还能承受15v的电压，同时输出很大的扭矩。注意我们现在要尝试将伺服调整到0度角来测试它的动作，并确定不是重力做了所有的工作 。一般来说，万向节工作时会使用重力来保持稳定 ，因此重心的位置很重要 。</p>
+<p>视频</p>
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNzM0MjM0NzQ4" frameborder=0 allowfullscreen></iframe>
+
+<p>电器控制起来还是有点跳动，而且总是以一个恒定的速度运行。我们觉得应该可以通过两件事情解决，第一件就是创建一个更高精度的正弦数组。然后应用一个PID 库，这个库能根据目标位置的距离算出需要多快的速度。如果目标位置非常远它就移动的更快，在他接近目标的时候会慢下来，最后稳定。这样我们就能消除颤抖做出反应更快，转动更平滑的万向节。
+这里是我们 最终的2轴动作 。它只能达到比较低的电压和比较小的电流， 所有我们没有达到需要的扭矩。我们再给安装的倾斜一点。</p>
+<p>视频</p>
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNzM0MDk5ODQw" frameborder=0 allowfullscreen></iframe>
+
+<p>这是GoPro 相机拍摄的测试记录 –录像的稳定性没有我们想象的完美 。可怕的噪音从无刷电机里发出来，我们也不确定这正不正常，但是感觉没有录音的必要了 。</p>
+<p>视频</p>
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNzM0MTAxNDAw" frameborder=0 allowfullscreen></iframe>
+
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../oshd/real_steel.html" class="navigation navigation-prev " aria-label="Previous page: 铁甲钢拳3"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../oshd/arduino-labview.html" class="navigation navigation-next " aria-label="Next page: 基于Arduino与LabVIEW的直流电机转速控制系统"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

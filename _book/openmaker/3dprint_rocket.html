@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>3D打印模型火箭建造工具箱 | 开源杂志</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="obookcc">
+    
+    
+    
+    <link rel="prev" href="../openmaker/muse.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="obookcc/openbook9" data-level="8.2" data-basepath=".." data-revision="1404238104718">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/obookcc/openbook9" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/obookcc/openbook9/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/obookcc/openbook9/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >开源杂志</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/obookcc" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/obookcc/openbook9/edit/master/openmaker/3dprint_rocket.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="get_in_touch_with_us/README.html">
+            
+            <a href="../get_in_touch_with_us/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> 联系我们
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="donate/README.html">
+            
+            <a href="../donate/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> 捐助
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="cooperation/README.html">
+            
+            <a href="../cooperation/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> 合作网站
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="advertising/README.html">
+            
+            <a href="../advertising/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> 广告
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="column/README.html">
+            
+            <a href="../column/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> 特邀专栏
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="column/read_circuit_schematics.html">
+            
+            <a href="../column/read_circuit_schematics.html">
+                <i class="fa fa-check"></i> <b>5.1.</b> 疯教授漫谈物理计算--看懂电路原理图
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="oshd/README.html">
+            
+            <a href="../oshd/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> 开源硬件
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="oshd/real_steel.html">
+            
+            <a href="../oshd/real_steel.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> 铁甲钢拳3
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="oshd/brushless-gimbal-with-arduino.html">
+            
+            <a href="../oshd/brushless-gimbal-with-arduino.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> 用ardunio 制作无刷万向节 
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="oshd/arduino-labview.html">
+            
+            <a href="../oshd/arduino-labview.html">
+                <i class="fa fa-check"></i> <b>6.3.</b> 基于Arduino与LabVIEW的直流电机转速控制系统
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="oshd/dfrocket--solidworks.html">
+            
+            <a href="../oshd/dfrocket--solidworks.html">
+                <i class="fa fa-check"></i> <b>6.4.</b> DFRocket--手把手教你用Solidworks建模型
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="oshd/maker-android.html">
+            
+            <a href="../oshd/maker-android.html">
+                <i class="fa fa-check"></i> <b>6.5.</b> 创客工具类安卓软件推荐
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ardublock/README.html">
+            
+            <a href="../ardublock/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> STEAM教育
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="scratch/scratch_first.html">
+            
+            <a href="../scratch/scratch_first.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> 从计算机俱乐部到终生幼儿园--第一期
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ardublock/ardublockled.html">
+            
+            <a href="../ardublock/ardublockled.html">
+                <i class="fa fa-check"></i> <b>7.2.</b> 《Ardublock玩转机器人》—点亮LED（上)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="ardublockled/README.html">
+            
+            <a href="../ardublockled/README.html">
+                <i class="fa fa-check"></i> <b>7.3.</b> 《Ardublock玩转机器人》—点亮LED（下）
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="openmaker/README.html">
+            
+            <a href="../openmaker/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> 开源制造
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="openmaker/muse.html">
+            
+            <a href="../openmaker/muse.html">
+                <i class="fa fa-check"></i> <b>8.1.</b> MUSE,3D扫描制作的3D胸衣
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="openmaker/3dprint_rocket.html">
+            
+            <a href="../openmaker/3dprint_rocket.html">
+                <i class="fa fa-check"></i> <b>8.2.</b> 3D打印模型火箭建造工具箱
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 100%;min-width: 94.73684210526316%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../get_in_touch_with_us/README.html" title="联系我们" class="chapter done new-chapter" data-progress="1" style="left: 5.2631578947368425%;"></a>
+    
+        <a href="../donate/README.html" title="捐助" class="chapter done new-chapter" data-progress="2" style="left: 10.526315789473685%;"></a>
+    
+        <a href="../cooperation/README.html" title="合作网站" class="chapter done new-chapter" data-progress="3" style="left: 15.789473684210526%;"></a>
+    
+        <a href="../advertising/README.html" title="广告" class="chapter done new-chapter" data-progress="4" style="left: 21.05263157894737%;"></a>
+    
+        <a href="../column/README.html" title="特邀专栏" class="chapter done new-chapter" data-progress="5" style="left: 26.31578947368421%;"></a>
+    
+        <a href="../column/read_circuit_schematics.html" title="疯教授漫谈物理计算--看懂电路原理图" class="chapter done " data-progress="5.1" style="left: 31.57894736842105%;"></a>
+    
+        <a href="../oshd/README.html" title="开源硬件" class="chapter done new-chapter" data-progress="6" style="left: 36.8421052631579%;"></a>
+    
+        <a href="../oshd/real_steel.html" title="铁甲钢拳3" class="chapter done " data-progress="6.1" style="left: 42.10526315789474%;"></a>
+    
+        <a href="../oshd/brushless-gimbal-with-arduino.html" title="用ardunio 制作无刷万向节 " class="chapter done " data-progress="6.2" style="left: 47.36842105263158%;"></a>
+    
+        <a href="../oshd/arduino-labview.html" title="基于Arduino与LabVIEW的直流电机转速控制系统" class="chapter done " data-progress="6.3" style="left: 52.63157894736842%;"></a>
+    
+        <a href="../oshd/dfrocket--solidworks.html" title="DFRocket--手把手教你用Solidworks建模型" class="chapter done " data-progress="6.4" style="left: 57.89473684210526%;"></a>
+    
+        <a href="../oshd/maker-android.html" title="创客工具类安卓软件推荐" class="chapter done " data-progress="6.5" style="left: 63.1578947368421%;"></a>
+    
+        <a href="../ardublock/README.html" title="STEAM教育" class="chapter done new-chapter" data-progress="7" style="left: 68.42105263157895%;"></a>
+    
+        <a href="../scratch/scratch_first.html" title="从计算机俱乐部到终生幼儿园--第一期" class="chapter done " data-progress="7.1" style="left: 73.6842105263158%;"></a>
+    
+        <a href="../ardublock/ardublockled.html" title="《Ardublock玩转机器人》—点亮LED（上)" class="chapter done " data-progress="7.2" style="left: 78.94736842105263%;"></a>
+    
+        <a href="../ardublockled/README.html" title="《Ardublock玩转机器人》—点亮LED（下）" class="chapter done " data-progress="7.3" style="left: 84.21052631578948%;"></a>
+    
+        <a href="../openmaker/README.html" title="开源制造" class="chapter done new-chapter" data-progress="8" style="left: 89.47368421052632%;"></a>
+    
+        <a href="../openmaker/muse.html" title="MUSE,3D扫描制作的3D胸衣" class="chapter done " data-progress="8.1" style="left: 94.73684210526316%;"></a>
+    
+        <a href="../openmaker/3dprint_rocket.html" title="3D打印模型火箭建造工具箱" class="chapter done " data-progress="8.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_795">
+                    
+                        <h1 id="3d-">3D打印模型火箭建造工具箱</h1>
+<blockquote>
+<p><a href="http://www.instructables.com/id/Rockit-Model-Rocket-Construction-Kit/" target="_blank">原文链接</a>  作者：vishnubob  翻译：babyw dragon</p>
+</blockquote>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket1.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket2.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket3.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket4.jpg" alt=""></p>
+<h3 id="-">视频</h3>
+<p>在我的成长过程中，我喜欢建造模型火箭，不过说实话，我曾经真的很糟。我时常会毫无准备得用一些我知道的工具。曾经我用热胶枪建造了一些火箭，但是火箭尾翼总是在飞行途中分离。如果把尾翼挂在上面，他们一般很难对齐，这却出现了一些有意思的飞行。我从来不怎么关心美学，我会用金色、银色和黑色在它上面喷涂一个人间炼狱。但是我觉得很好，很有趣，并且从中成长。</p>
+<p>快进到现在，我很幸运能拥有一个家用3D打印机。我已经打印了一大堆东西，大部分都不好。我想试着去打印些更实用的东西。并且我觉得更复杂、更重要的是根据用户需要和制造工艺来制作成型。在网上有很多免费、实用和可下载的模型，但是大多数模型都是.STL文件的，这使得他们在渲染环节的操作和修改效率低下。用CAD设计很棒，但是这类系统都硕大无比而且灵活性不好。这个实验是测试使用轻量级、随处可得的工具可以做些什么。就是为了好玩，我选择了模型火箭，但我并不指望它能有多好。不过我彻底错了，这个模型制作的难以置信的出色。并且通过这个过程你可以打印精确、完整和可定制的模型火箭。</p>
+<p>掌握一点编程技巧，你就可以使用这个设备去定制你自己的模型火箭并且打印它。取决于你的打印机和你如何打印你的火箭组件，你可以在两个小时内打印一个完整的火箭。所有你要做的就是把组件拼在一起，加上引擎，然后你可以走了。</p>
+<p>这些火箭是实验品。保证你操作的安全并且在正确的监管之下是极其重要的。实验火箭非常危险，它们可能会伤害你和你爱的人，请一定小心。</p>
+<h2 id="-">第一步：材料</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket5.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket8.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket6.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket7.jpg" alt=""></p>
+<p>-Python：构架是在Python里写的。我已经发表在GitHub里，欢迎大家提出请求。</p>
+<p>-OpenSCAD：这是个免费、好用的编程语言。它能够轻松得将程序定义的模型转换成适合生产制造的3D模型。Rockit工具箱通过SCAD自动将你的火箭结构转换成.STL文件。</p>
+<p>-3D打印：我只用过我的ultimaker2测试过它。如果你没有3D打印机，你也可以在在线打印店定制你的火箭组件。</p>
+<p>-火箭引擎：你可以在大多数在线兴趣商店购买引擎这类东西。根据引擎的大小去设计和安装你的火箭很重要。许多火箭的规格是根据引擎的实际尺寸自动计算的。</p>
+<p>-<a href="http://www.estesrockets.com/rockets/accessories/launch-systems" target="_blank">发射系统</a>：发射台、点火器、电子发射控制器。你可以制定火箭的发射架尺寸并安装。</p>
+<p>-露天场所：在一片开阔的露天场地发射你的火箭是很重要的，并且确认你和你的小伙伴们在远离发射区域的安全地方。要考虑到火箭的不可预测的情况，尤其当你想重复发射火箭。在回收火箭发射过的火箭的时候必须检查。不要发射损坏的火箭。</p>
+<h2 id="-">第二步：软件安装</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket9.jpg" alt=""></p>
+<p>根据发表在<a href="https://github.com/vishnubob/rockit/wiki/Rockit" target="_blank">rockit wiki</a>上的安装指导进行安装。它会引导你下载python程序包并安装到你的电脑。</p>
+<h2 id="-">第三步：建造你的组件</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket10.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket11.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket12.jpg" alt=""></p>
+<p>建造你的第一个火箭不难。你可以从程序包一些预定义的模板开始。让我们运行atlas指令，使火箭组件适合最小尺寸的引擎。</p>
+<pre><code>atlas -t mini -p -s
+</code></pre><p>这个命令会为火箭的多个组件生成.STL和.PNG文件。你可以用这些.STL文件去3D打印。你可以在rockit wiki阅读更多有关建造火箭的信息。</p>
+<h2 id="-">第四步：尾翼结构</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket13.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket14.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket15.jpg" alt=""></p>
+<p>你可以使用JSON配置文件来修改火箭的结构。让我们来尝试改变尾翼。在你根据上一步制作小引擎火箭后，复制一份mini_engine.json文件，命名为“my_mini_engine.json”。</p>
+<pre><code>$ cp mini_engine/mini_engine.json
+my_mini_engine.json
+</code></pre><p>打开你喜欢的编译器，编译“my_mini_engine.json”文件，它应该像这样。转到文件的底部，看尾翼定义的那节：</p>
+<pre><code>&quot;tail&quot;: { &quot;fin_count&quot;: 4 }
+</code></pre><p>让我们在尾翼代码部分增加尾翼的数量，从4增加到8：</p>
+<pre><code>&quot;tail&quot;: { &quot;fin_count&quot;: 8 }
+</code></pre><p>一旦我们保存更改，我们可以运行带‘-p’选项的atlas为这个结构重新生成图片：
+    $ atlas -i my_mini_engine.json -p
+对于螺旋效应，你可以从0到4调整置文件里的“倾斜”值，使尾翼轨迹有4mm的倾斜。
+    &quot;fin&quot;: { &quot;deflection&quot;: 4 }</p>
+<h2 id="-">第五步：打印你的火箭组件</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket16.jpg" alt=""></p>
+<p>你可以用你的打印管理软件在一个过程里打印多个火箭组件。然而，你需要在打印上多留个心眼，因为东西可能做的很糟。</p>
+<h2 id="-">第六步：组合</h2>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket17.jpg" alt=""></p>
+<p><img src="http://doask.qiniudn.com/openbook9-3drocket18.jpg" alt=""></p>
+<p>火箭的组件通过接环连接在一起。你可以用任何一种丙烯酸胶连接，但是如果你在打印机里预留了接环尺寸，你就能感受到摩擦力作用。这些作用足够牢靠，火箭在升空后都不会分离。如果你打印备用部件，你可以在现场用备用部件再安装或修复火箭。采用松弛的摩擦作用，你可以让火箭在飞行中易于分离。这对于多引擎平台和基于前椎体回的收系统很有用。</p>
+<h2 id="-">评论：</h2>
+<pre><code>rf
+好东西。不过我仍然在遵循传统的手工制作，模型火箭力学。
+我敢打赌还有很多革新的方式影响回收系统，例如，除了管中管的抛射还有其他有趣的方式连接各种组件。
+vishnubob
+你好rf。我喜欢你的想法！如果你用Rockit（或其他的设计软件）去探索你的点子并然后分享你的成功那真是太好了。
+
+jamttingly
+非常漂亮。我之前打印了火箭，在发射时他们很受欢迎。你必须要注意的一点是（以你的视频为参考）重量和稳定性。我发现由于聚乳酸非常好使，你就可以打印大型的尾翼或者满载的整流罩来维持稳定性。那就是说，3D打印是一种制造独一无二设计的火箭和挑战极限的牛逼方式。
+vishnubob
+嗨jmattingly，你对极了。我之所以写这个工具箱就是想探索可编程CAD。我想把这项成果与[OpenRocket](http://openrocket.sourceforge.net/）衔接来实现软件驱动设计和仿真。如果你真的能“打印”你的火箭那真是太牛逼了。
+顺便说一句，我认为用这样的工具链去教育孩子科学和工程学有很大的潜力。例如加载有效载荷传感器，学生可以清晰的比较小火箭的性能特征。
+我希望有人能在这个项目里帮助我。我可以为它贡献我的点子、新设计、成熟的设计套路、查错能力、文档和经验等等。请查看GitHub页面并让我知道你的疑问。
+</code></pre>
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../openmaker/muse.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MUSE,3D扫描制作的3D胸衣"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
