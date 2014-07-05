@@ -19,4 +19,6 @@
 * [开源制造](openmaker/README.md)
    * [MUSE,3D扫描制作的3D胸衣](openmaker/muse.md)
    * [3D打印模型火箭建造工具箱](openmaker/3dprint_rocket.md)
+* [我是创客](maker/README.md)
+   * [clone](maker/clone.md)
 
