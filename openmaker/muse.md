@@ -1,5 +1,5 @@
 # MUSE,3D扫描制作的3D胸衣
- >原文链接：http://www.instructables.com/id/MUSE-3D-printed-corset-from-a-3D-Scan-by-Samuel-N-/
+ >[原文链接](http://www.instructables.com/id/MUSE-3D-printed-corset-from-a-3D-Scan-by-Samuel-N-/) 作者:le FabShop  翻译:katrina  校对:Lee苦海
 
 ![](http://doask.qiniudn.com/openbook9-muse1.jpg)
 
