@@ -20,5 +20,5 @@
    * [MUSE,3D扫描制作的3D胸衣](openmaker/muse.md)
    * [3D打印模型火箭建造工具箱](openmaker/3dprint_rocket.md)
 * [我是创客](maker/README.md)
-   * [clone](maker/clone.md)
+   * [来自法国的艺术家clone，与您分享视觉效果与交互体验](maker/clone.md)
 
